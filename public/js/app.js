@@ -20,9 +20,11 @@ function onSuccess(data) {
   let icon = document.createElement('i');
   icon.setAttribute('class', 'glyphicon glyphicon-ok icon_check');
   container.appendChild(icon);
-
+  let profile = document.getElementById('profile');
+  let divRes = document.createElement('div');
+  divRes.setAttribute('id','response');
+  profile.appendChild(divRes);
   
-
   let pn = document.createElement('p');
   pn.setAttribute('id', 'name');
   let pname = document.getElementById('response');
