@@ -3,6 +3,10 @@ body{
   background-image: url("../assets/fondo.jpg");
   color: white;
 }
-/* silvia */
 
-/* fin silvia */
+#response{
+  border: 10px inset rgba(167, 158, 158, 0.5);;
+  background-color: rgba(100, 98, 98, 0.5);;
+  margin: 30px;
+  padding: 20px;
+}

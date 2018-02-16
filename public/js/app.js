@@ -15,22 +15,26 @@ function onSuccess(data) {
   let headline = data.headline;
   document.getElementById('auth').innerText = '¡Bien!'
   document.getElementById('sentence').innerText = 'Se ha concluido con la identificación exitosamente';
-  /* silvia1 */
+
   let container = document.getElementById('icon');
   let icon = document.createElement('i');
   icon.setAttribute('class', 'glyphicon glyphicon-ok icon_check');
   container.appendChild(icon);
-  /* Fin silvia1 */
+
   
-  /* Silvia 2 */
-  
-   /* Fin Silvia 2 */
+
+  let pn = document.createElement('p');
+  pn.setAttribute('id', 'name');
+  let pname = document.getElementById('response');
+  pname.appendChild(pn);
+
   let ph = document.createElement('p');
   ph.setAttribute('id', 'headline');
   pname.appendChild(ph);
-  /* Silvia 3 */
+
+  //profile
+  document.getElementById('name').innerText = `${firstName} ${lastName}`;
   
-   /* Fin Silvia 3 */
   document.getElementById('headline').innerText = `${headline}`;
   
 }
